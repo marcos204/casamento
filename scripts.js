@@ -42,9 +42,9 @@ function updateCarousel() {
     carouselInner.style.transform = `translateX(${offset}%)`;
 }
 
-// Mapa do Google
+// Mapa do Google -15.806825250402246, -47.92432958537294
 function initMap() {
-    const location = { lat: -23.5505, lng: -46.6333 }; // Coordenadas do local
+    const location = { lat: -15.806825250402246, lng: -47.92432958537294 }; // Coordenadas do local
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: location,
