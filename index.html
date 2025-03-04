@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento de Marcos Luiz & Ketyane Brito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Casamento de Marcos Luiz & Ketyane Brito</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#details">Detalhes</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#gifts">Presentes</a></li>
+                <li><a href="#rsvp">Confirmação</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Bem-vindos ao nosso casamento!</h2>
+            <p>Estamos muito felizes em compartilhar este momento especial com vocês.</p>
+            <div id="countdown"></div>
+        </div>
+    </section>
+
+    <section id="details">
+        <h2>Detalhes do Evento</h2>
+        <p><strong>Data:</strong> 18 de Julho de 2026</p>
+        <p><strong>Local:</strong> Igreja Matriz, Cidade, Estado</p>
+        <p><strong>Horário:</strong> 16:00</p>
+        <div id="map"></div>
+    </section>
+
+    <section id="gallery">
+        <h2>Nossa Galeria</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="foto1.jpg" alt="Foto do casal 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="foto2.jpg" alt="Foto do casal 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="foto3.jpg" alt="Foto do casal 3">
+                </div>
+            </div>
+            <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="gifts">
+        <h2>Lista de Presentes</h2>
+        <p>Se quiser nos presentear, aqui estão algumas sugestões:</p>
+        <ul>
+            <li><a href="https://www.loja1.com" target="_blank">Loja 1</a></li>
+            <li><a href="https://www.loja2.com" target="_blank">Loja 2</a></li>
+        </ul>
+    </section>
+
+    <section id="rsvp">
+        <h2>Confirmação de Presença</h2>
+        <form id="rsvp-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="guests">Número de Convidados:</label>
+            <input type="number" id="guests" name="guests" required>
+            <button type="submit">Confirmar</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Para dúvidas, entre em contato conosco:</p>
+        <p>Email: casal@meucasamento.com</p>
+        <p>Telefone: (11) 98765-4321</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Casamento de Marcos Luiz & Ketyane Brito. Todos os direitos reservados.</p>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="musica-romantica.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5DZj0fWQic837ACODmP8s7fJfuSHkQcw&callback=initMap" async defer></script>
+</body>
+</html>
